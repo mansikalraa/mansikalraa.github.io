@@ -1,0 +1,242 @@
+input[type=checkbox] {
+    display: none;
+}
+
+.projects,
+.about {
+    position: absolute;
+    top: 2%;
+    margin: 0 1%;
+    font-size: 1.3em;
+    color: white;
+    line-height: 3em;
+    cursor: pointer;
+    display: block;
+    transition: all .5s;
+}
+
+.projects {
+    float: left;
+}
+
+.about {
+    right: 0%;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    justify-content: center;
+    align-items: center;
+    left: -100%;
+    direction: rtl;
+}
+
+.about-me {
+    left: 100%;
+    padding: 8%;
+}
+
+.about-me>p:nth-child(1) {
+    font-size: 2.5em;
+    margin: 5%;
+    font-weight: bold;
+}
+
+.about-me>p:nth-child(2) {
+    font-size: 1.5em;
+}
+
+.about-me>p:nth-child(3) {
+    font-size: 1em;
+    margin: 2%;
+}
+
+.projects-list,
+.about-me {
+    position: fixed;
+    width: 60%;
+    height: 80vh;
+    background: whitesmoke;
+    top: 4%;
+    text-align: center;
+    transition: all .5s;
+    border-radius: 2%;
+    z-index: 10;
+}
+
+.projects-list>div {
+    background: whitesmoke;
+    width: 70%;
+    margin: 3%;
+    font-size: 1.5em;
+    color: gray;
+}
+
+.projects-list>div img {
+    width: 100%;
+    height: auto;
+    border: 2px solid lightgray;
+    box-shadow: 5px 5px 5px gray, 0px 2px 2px gray;
+}
+
+.projects-list>div:hover {
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+#check-project:checked~.projects-list {
+    left: 0%;
+}
+
+#check-project:checked~.projects {
+    margin-left: 62%;
+}
+
+#check-about:checked~.about-me {
+    left: 40%;
+}
+
+#check-about:checked~.about {
+    margin-right: 62%;
+}
+
+
+/* Skills and contact */
+
+.skill,
+.contact {
+    position: absolute;
+    bottom: 1%;
+    margin: 0 1%;
+    font-size: 1.3em;
+    color: white;
+    line-height: 3em;
+    cursor: pointer;
+    display: block;
+    transition: all .5s;
+}
+
+.contact {
+    right: 0%;
+}
+
+.my-skill,
+.contact-me {
+    position: fixed;
+    width: 60%;
+    height: 80vh;
+    background: whitesmoke;
+    bottom: 4%;
+    text-align: center;
+    transition: all .5s;
+    border-radius: 2%;
+    z-index: 10;
+}
+
+.my-skill {
+    left: -100%;
+    padding: 4%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-me {
+    left: 100%;
+    padding: 7%;
+}
+
+.my-skill li {
+    background-color: whitesmoke;
+    margin: 2.5%;
+    width: 30%;
+    margin-left: 10%;
+}
+
+#check-skill:checked~.skill {
+    margin-left: 62%;
+}
+
+#check-skill:checked~.my-skill {
+    left: 0%;
+}
+
+#check-contact:checked~.contact-me {
+    left: 40%;
+}
+
+#check-contact:checked~.contact {
+    margin-right: 62%;
+}
+
+span {
+    background-color: whitesmoke;
+    font-size: 2em;
+}
+
+form {
+    background-color: whitesmoke;
+    margin: 4%;
+}
+
+input[type=text] {
+    padding: 2%;
+}
+
+input[type=button] {
+    padding: 2%;
+    margin: 2%;
+    width: 15%;
+    height: auto;
+}
+
+input[type=text]:focus,
+input[type=button]:hover {
+    box-shadow: 2px 2px 2px gray, 0px 1px 1px gray;
+    outline: none;
+}
+
+#name {
+    width: 25%;
+    margin: 2% 0%;
+}
+
+#email {
+    width: 40%;
+    margin: 2% 0%;
+}
+
+#msg {
+    width: 65%;
+}
+
+.contact-me>p {
+    background-color: whitesmoke;
+    font-size: 1.2em;
+    padding-bottom: 2%;
+}
+
+i {
+    background-color: whitesmoke;
+    color: black;
+    font-size: 2em;
+    margin: 2%;
+}
+
+i:hover {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px gray;
+}
+
+.projects:hover,
+.skill:hover,
+.contact:hover,
+.about:hover {
+    text-shadow: 2px 2px 5px white;
+    color: lightgray;
+}
