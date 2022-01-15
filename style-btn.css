@@ -280,6 +280,10 @@ input[type=button]:hover {
         width: 80%;
         margin: 3% 0%;
     }
+    .my-skill {
+        padding-left: 10%;
+        padding-top: 8%;
+    }
 }
 
 @media only screen and (max-width: 450px) {
