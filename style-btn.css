@@ -230,6 +230,7 @@ input[type=button]:hover {
 
 #msg {
     width: 65%;
+    text-overflow: ellipsis;
 }
 
 #sendmsg {
