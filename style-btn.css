@@ -26,7 +26,8 @@ input[type=checkbox] {
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     justify-content: center;
     align-items: center;
     left: -100%;
@@ -35,22 +36,24 @@ input[type=checkbox] {
 
 .about-me {
     left: 100%;
+    display: flex;
     padding: 8%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-me>p:nth-child(1) {
-    font-size: 2.5em;
-    margin: 5%;
+    font-size: 2.2em;
     font-weight: bold;
 }
 
 .about-me>p:nth-child(2) {
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .about-me>p:nth-child(3) {
     font-size: 1em;
-    margin: 2%;
 }
 
 .projects-list,
@@ -82,10 +85,12 @@ input[type=checkbox] {
 }
 
 .projects-list>div:hover {
-    opacity: 0.5;
+    opacity: 0.8;
+    width: 75%;
+    font-size: 1.7em;
 }
 
-a {
+.projects-list a {
     text-decoration: none;
     color: gray;
 }
@@ -137,25 +142,37 @@ a {
     transition: all .5s;
     border-radius: 2%;
     z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .my-skill {
     left: -100%;
     padding: 4%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .contact-me {
     left: 100%;
-    padding: 7%;
+    padding: 8%;
+    justify-content: center;
 }
 
 .my-skill li {
     background-color: whitesmoke;
-    margin: 2.5%;
-    width: 30%;
-    margin-left: 10%;
+    margin: 2%;
+    width: 28%;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.my-skill li ul li {
+    font-size: 0.8em;
+    width: 100%;
+}
+
+.my-skill i {
+    font-size: 0.8em;
+    color: rgb(59, 59, 59);
 }
 
 #check-skill:checked~.skill {
@@ -174,7 +191,7 @@ a {
     margin-right: 62%;
 }
 
-span {
+.contact-me span {
     background-color: whitesmoke;
     font-size: 2em;
 }
@@ -215,20 +232,20 @@ input[type=button]:hover {
     width: 65%;
 }
 
-.contact-me>p {
+.contact-me p {
     background-color: whitesmoke;
     font-size: 1.2em;
-    padding-bottom: 2%;
+    width: 100%;
 }
 
-i {
+.contact-me i {
     background-color: whitesmoke;
     color: black;
     font-size: 2em;
-    margin: 2%;
+    margin: 0.2em;
 }
 
-i:hover {
+.contact-me i:hover {
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px gray;
 }
@@ -239,4 +256,50 @@ i:hover {
 .about:hover {
     text-shadow: 2px 2px 5px white;
     color: lightgray;
+    font-size: 1.8em;
+}
+
+@media only screen and (max-width: 550px) {
+    .about-me>p:nth-child(1) {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .about-me>p:nth-child(2) {
+        font-size: 1.2em;
+    }
+    .about-me>p:nth-child(3) {
+        font-size: 1em;
+    }
+    .contact-me {
+        padding: 12%;
+    }
+    #name,
+    #email,
+    #msg,
+    #sendbtn {
+        width: 65%;
+        margin: 2% 0%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .about-me>p:nth-child(1) {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .about-me>p:nth-child(2) {
+        font-size: 1em;
+    }
+    .about-me>p:nth-child(3) {
+        font-size: 0.8em;
+    }
+    .my-skill li {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .my-skill li {
+        width: 80%;
+    }
 }
