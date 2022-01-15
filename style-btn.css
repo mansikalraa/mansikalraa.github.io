@@ -198,7 +198,7 @@ input[type=checkbox] {
 
 form {
     background-color: whitesmoke;
-    margin: 4%;
+    padding: 4%;
 }
 
 input[type=text] {
@@ -230,6 +230,11 @@ input[type=button]:hover {
 
 #msg {
     width: 65%;
+}
+
+#sendmsg {
+    font-size: 0.8em;
+    color: brown;
 }
 
 .contact-me p {
