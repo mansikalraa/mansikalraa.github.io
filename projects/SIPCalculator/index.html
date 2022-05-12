@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Returns Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <p>SIP Returns Calculator</p>
+            <p>Calculate returns on your SIP investments.</p>
+        </header>
+        <div class="data">
+            <form>
+                <label for="amount">Monthly Investment Amount (Rs.)</label>
+                <input type="number" id="amount" />
+                <label for="period">Investment Period (Years)</label>
+                <input type="number" id="period" />
+                <label for="returns">Expected Annual Returns (%)</label>
+                <input type="number" id="returns" />
+                <label for="inflation">Adjust for Inflation? (Inflation = 6%)</label>
+                <select id="inflation">
+                    <option value = "no" selected>No</option>
+                    <option value = "yes">Yes</option>
+                </select>
+                <input type="button" id="calculate" value="Calculate">
+            </form>
+        </div>
+        <div id="summary">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

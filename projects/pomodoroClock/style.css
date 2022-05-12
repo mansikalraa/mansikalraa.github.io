@@ -1,0 +1,109 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin:0;
+}
+body{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgba(248, 130, 51, 0.89);
+}
+hr{
+  border: 0.1px dashed;
+}
+.container{
+  background-color: rgb(49, 47, 47);
+  opacity: 0.8;
+  text-align:center;
+  position:relative;
+  height: 460px;
+  width:220px;
+  border: 2px solid rgb(49, 47, 47);
+  border-radius: 5px;
+  box-shadow: black 0px 10px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.top-container, .bottom-container{
+  background-color: rgb(49, 47, 47);
+}
+.top-container{
+  height: 225px;
+  width:220px;
+  position: relative;
+}
+.box2{
+  margin:10px;
+  padding:5px;
+  width:190px;
+  height:200px;
+  background-color: lightgray;
+}
+.box3{
+  margin:5px;
+  padding:5px;
+  width:170px;
+  height:180px;
+  background-color: white;
+}
+#timeDisplay{
+  padding-top: 75px;
+  text-align: center;
+  font-size:25px;
+  font-weight:bold;
+}
+.bottom-container{
+  height: 200px;
+  width:220px;
+  position: relative;
+  color:white;
+}
+#sb{
+  padding-top:5px;
+  font-size: 20px;
+  font-weight: 500px;
+  height: 45px;
+}
+#sessiontimeDisplay{
+  line-height: 20px;
+  color:rgb(60, 216, 216);
+}
+#breaktimeDisplay{
+  line-height: 20px;
+  color:orangered;
+}
+.row{
+  padding: 10px;
+  font-size: 12px;
+  height:70px;
+}
+.session{
+  position: absolute;
+  left: 0px;
+  width: 50%;
+}
+.break{
+  position: absolute;
+  right: 0px;
+  width: 50%;
+}
+button{
+  margin-top: 8px;
+  background-color: black;
+  color:white;
+  border: none;
+  display: inline-block;
+  width:30px;
+  cursor: hand;
+  border-radius: 3px;
+}
+button:disabled{
+  background-color: grey;
+  cursor: initial;
+}
+.buttons{
+  margin-top: 10px;
+}
+.buttons button{
+  margin:10px;
+  width: 70px;
+  height:40px;
+}
